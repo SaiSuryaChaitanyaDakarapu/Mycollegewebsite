@@ -1,0 +1,84 @@
+.menuhome{
+    width: 100%;
+    color: white;
+    padding: 10px 3px;
+    border: none;
+    cursor: pointer;
+    font-weight: initial;
+    background: #FF8C00;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    font-family: sans-serif;
+}
+.menugroups{
+    width: 100%;
+    color: white;
+    padding: 10px 3px;
+    border: none;
+    cursor: pointer;
+    font-weight: initial;
+    background: #FF8C00;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    font-family: sans-serif;
+}
+.menuplacements{
+    width: 100%;
+    color: white;
+    padding: 10px 3px;
+    border: none;
+    cursor: pointer;
+    font-weight: initial;
+    background: #FF8C00;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    font-family: sans-serif;
+}
+.menufeestructure{
+    width: 100%;
+    color: white;
+    padding: 10px 3px;
+    border: none;
+    cursor: pointer;
+    font-weight: initial;
+    background: #FF8C00;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    font-family: sans-serif;
+}
+.menuresults{
+    width: 100%;
+    color: white;
+    padding: 10px 3px;
+    border: none;
+    cursor: pointer;
+    font-weight: initial;
+    background: #FF8C00;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    font-family: sans-serif;
+}
+.menuadmissions{
+    width: 100%;
+    color: white;
+    padding: 10px 3px;
+    border: none;
+    cursor: pointer;
+    font-weight: initial;
+    background: #FF8C00;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    font-family: sans-serif;
+}
+.menucontactus{
+    width: 100%;
+    color: white;
+    padding: 10px 3px;
+    border: none;
+    cursor: pointer;
+    font-weight: initial;
+    background: #FF8C00;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    font-family: sans-serif;
+}
