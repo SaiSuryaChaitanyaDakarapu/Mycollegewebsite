@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"></meta>
+    <meta charset="UTF-8">
+    <meta name="description" content="Your destination">
+    <meta name="author" content="Sai Surya Chaitanya Dakarapu">
+    <meta name="keywords" content="HTML,CSS,JS">
+    <meta name="viewport" width=device-width, initial-scale=1.0" media="only screen and (max-device-width: 480px) , only screen and (-webkit-min-device-pixel-ratio: 2) , screen and (-webkit-device-pixel-ratio:1.5)" />
+    <meta name="google-site-verification" content="DtL4pfu08OJFgvUJs6hyu-p_ZJJthMzlU7zCfg9MW-Q" />
+    <link rel="shortcut icon" href="college_icon.ico" />
+    <title>ADITYA DEGREE COLLEGE SRIKAKULAM</title>
+    <link rel="stylesheet" href="indexlogin.css" type="text/css"></link>
+</head>
+<body>
+<header>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="college_logo.png" width=14% ></img>
+    <img src="page_title.png" width=35%></img>
+</header><hr>
+<div class="login-page">
+    <div class="form">
+        <form class="register-form">
+            <input class="fields" type="text" placeholder="FULL NAME OF THE STUDENT" required></input>
+            <input class="fields" type="password" placeholder=" PASSWORD" required></input>
+            <input class="fields" type="email" placeholder=" EMAIL ID" required></input>
+            <input class="fields" type="mobile" placeholder=" MOBILE NUMBER" required></input><br><br>
+            <label class="gender">Gender
+            <label class="radio-inline">&nbsp;
+                <input type="radio" name="gender" required="required">Male</input>
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="gender" required="required">Female</input>
+            </label>
+            </label><br>
+            <label for="branch">GROUP</label>
+            <select class="branch" id="branch" required>
+                <option value="">Select</option>
+                <optgroup label="Professional Groups">
+                    <option value="bca">Bachelor of Computer Applications</option>
+                    <option value="bba">Bachelor of Business Administration</option>
+                </optgroup>
+                <optgroup label="Bachelor of Science (B.Sc)">
+                    <option value="mpcs">Maths Physics Computer Science</option>
+                    <option value="mecs">Maths Electronics Computer Science</option>
+                    <option value="mccs">Maths Chemistry Computer Science</option>
+                    <option value="mscs">Maths Statistics Computer Science</option>
+                    <option value="mpc">Maths Physics Chemistry</option>
+                </optgroup>
+            </select>
+            <button type="submit">REGISTER</button>
+            <p class="message">Already Registered?<a href="#">&nbsp;Login Here!</a></p>
+        </form>
+        <form class="login-form">
+            <p style="text-align: center;font-family: sans-serif;color: #FFD700;font-size: medium"><strong>LOGIN FORUM</strong></p>
+            <input class="fields" type="text" placeholder="USER ID" required></input>
+            <input class="fields" type="password" placeholder="PASSWORD" required></input>
+            <button type="submit">LOGIN</button>
+            <p class="message">New to Aditya?<a href="#">&nbsp;Register!</a></p>
+            <p><a href="index.html">Forgot Password?</a></p>
+        </form>
+    </div>
+</div>
+        <div class="guest-form">
+            <p style="text-align: center;font-family: sans-serif;color: #FFD700;font-size: medium"><STRONG>EXPLORE IN </STRONG><button class="guestdata" type="submit" onclick="guestlogin()">GUEST MODE</button></p>
+        </div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$('.message a').click(function(){
+ $('form').animate({height:"toggle",opacity: "toggle"}, "slow");
+})
+</script>
+<script>
+    function guestlogin() {
+        window.location.href="guest_login.html";
+    }
+</script>
+</body>
+</html>

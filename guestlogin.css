@@ -1,0 +1,109 @@
+body{
+    margin: 0;border: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+}
+.guest_page{
+    position: fixed;
+    width: 350px;
+    padding: 14% 32% 0px;
+}
+.guest {
+    position: absolute;
+    top:5cm;left: 0.5cm;
+    z-index: 5;
+    background: #000080;
+    max-width: 350px;
+    margin: 0 auto 100%;
+    padding: 30px 5px;
+    text-align: center;
+    border-radius: 14px;
+}
+.guest_page input{
+    z-index: 1;
+    font-family: "Roboto",sans-serif;
+    outline: 1px;
+    background: #F2F2F2;
+    width: 80%;
+    border: 0;
+    margin: 0 0 18px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.home_page{
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header {
+    position: fixed;
+    padding: 0px;
+    border-bottom-color:#FFD700;
+    width: 100%;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    background-color:#000080;
+    max-width: 100%;
+    background-size: cover;
+    margin: 0;
+    z-index: 5;
+}
+html,body
+{
+    margin: 0;
+    padding: 0;
+}
+.guest button{
+    position: relative;
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #FF8C00;
+    width: 80%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14PX;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 5;
+}
+.guest button:hover,.guest button:active{
+    background: #4CAF50;
+}
+.youtube{
+    position: absolute;
+    right: 0.2cm;
+    top:5.1cm;
+    border-radius: 14px;
+    opacity: 0.9;
+    border-color: #FFD700;
+    border-style: solid;
+    border-width: 3px;
+}
+.download{
+    position: absolute;
+    top:25%;left: 75%;
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #FF8C00;
+    width: 20%;
+    border: 0;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 7PX;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 5;
+}
+.download:hover,.download:active{
+    background: #4CAF50;
+}
