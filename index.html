@@ -1,78 +1,98 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="eng">
 <head>
     <meta charset="UTF-8"></meta>
     <meta charset="UTF-8">
     <meta name="description" content="Your destination">
     <meta name="author" content="Sai Surya Chaitanya Dakarapu">
     <meta name="keywords" content="HTML,CSS,JS">
-    <meta name="viewport" width=device-width, initial-scale=1.0" media="only screen and (max-device-width: 480px) , only screen and (-webkit-min-device-pixel-ratio: 2) , screen and (-webkit-device-pixel-ratio:1.5)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.00, maximum-scale=2.00, minimum-scale=1.00" />
     <meta name="google-site-verification" content="DtL4pfu08OJFgvUJs6hyu-p_ZJJthMzlU7zCfg9MW-Q" />
-    <link rel="shortcut icon" href="college_icon.ico" />
-    <title>ADITYA DEGREE COLLEGE SRIKAKULAM</title>
+    <link rel="shortcut icon" href="adityalogo_uvh_icon.ico" />
+    <title>ADITYA DEGREE STUDENTS FORUM</title>
     <link rel="stylesheet" href="indexlogin.css" type="text/css"></link>
 </head>
 <body>
-<header>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="college_logo.png" width=14% ></img>
-    <img src="page_title.png" width=35%></img>
-</header><hr>
+    <header>
+        <div class="headribbon">
+            <img height="80px" width="120px" src="college_logo.png"></img>
+            <div class="pagetitle"><strong>S&nbsp;T&nbsp;U&nbsp;D&nbsp;E&nbsp;N&nbsp;T&nbsp;&nbsp;F&nbsp;O&nbsp;R&nbsp;U&nbsp;M</strong></div>
+        </div>
+    </header><hr>
+    <section></section>
 <div class="login-page">
     <div class="form">
-        <form class="register-form">
-            <input class="fields" type="text" placeholder="FULL NAME OF THE STUDENT" required></input>
-            <input class="fields" type="password" placeholder=" PASSWORD" required></input>
-            <input class="fields" type="email" placeholder=" EMAIL ID" required></input>
-            <input class="fields" type="mobile" placeholder=" MOBILE NUMBER" required></input><br><br>
+        <form class="register-form" action="registerpage.php" method="POST">
+            <p style="text-align: center;font-family: 'Courier New', Courier, monospace;color: #FFD700;font-size: x-large"><strong>R&nbsp;E&nbsp;G&nbsp;I&nbsp;S&nbsp;T&nbsp;E&nbsp;R</strong></p>
+            <input type="text" name = rname placeholder="FULL NAME OF THE STUDENT" required></input>
+            <input type="password" name = pass placeholder=" PASSWORD" required></input>
+            <input type="email" name = remail placeholder=" EMAIL ID" required></input>
+            <input type="mobile" name = rmobile placeholder=" MOBILE NUMBER" required></input><br>
             <label class="gender">Gender
-            <label class="radio-inline">&nbsp;
-                <input type="radio" name="gender" required="required">Male</input>
+            <label class="radio-inline">&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="rgender" required="required" value="Male">Male</input>
             </label>
             <label class="radio-inline">
-                <input type="radio" name="gender" required="required">Female</input>
+                <input type="radio" name="rgender" required="required" value="Female">Female</input>
             </label>
             </label><br>
             <label for="branch">GROUP</label>
             <select class="branch" id="branch" required>
-                <option value="">Select</option>
+                <option>Select</option>
                 <optgroup label="Professional Groups">
-                    <option value="bca">Bachelor of Computer Applications</option>
-                    <option value="bba">Bachelor of Business Administration</option>
+                    <option name="rgroup" value="BCA">Bachelor of Computer Applications</option>
+                    <option name="rgroup" value="BBA">Bachelor of Business Administration</option>
                 </optgroup>
                 <optgroup label="Bachelor of Science (B.Sc)">
-                    <option value="mpcs">Maths Physics Computer Science</option>
-                    <option value="mecs">Maths Electronics Computer Science</option>
-                    <option value="mccs">Maths Chemistry Computer Science</option>
-                    <option value="mscs">Maths Statistics Computer Science</option>
-                    <option value="mpc">Maths Physics Chemistry</option>
+                    <option name="rgroup" value="MPCs">Maths Physics Computer Science</option>
+                    <option name="rgroup" value="MECs">Maths Electronics Computer Science</option>
+                    <option name="rgroup" value="MCCs">Maths Chemistry Computer Science</option>
+                    <option name="rgroup" value="MSCs">Maths Statistics Computer Science</option>
+                    <option name="rgroup" value="MPC">Maths Physics Chemistry</option>
                 </optgroup>
             </select>
-            <button type="submit">REGISTER</button>
+            <button id="login-redirect" type="submit">REGISTER</button>
             <p class="message">Already Registered?<a href="#">&nbsp;Login Here!</a></p>
         </form>
-        <form class="login-form">
-            <p style="text-align: center;font-family: sans-serif;color: #FFD700;font-size: medium"><strong>LOGIN FORUM</strong></p>
-            <input class="fields" type="text" placeholder="USER ID" required></input>
-            <input class="fields" type="password" placeholder="PASSWORD" required></input>
-            <button type="submit">LOGIN</button>
+        <form class="login-form" action="loginpage.php" method="POST">
+            <p style="text-align: center;font-family: 'Courier New', Courier, monospace;color: #FFD700;font-size: x-large"><strong>L&nbsp;O&nbsp;G&nbsp;I&nbsp;N</strong></p>
+            <input name="remail" type="email" placeholder="EMAIL ID" required></input>
+            <input name="pass" type="password" placeholder="PASSWORD" required></input>
+            <button id="under-construction-page" type="submit">LOGIN</button>
             <p class="message">New to Aditya?<a href="#">&nbsp;Register!</a></p>
-            <p><a href="index.html">Forgot Password?</a></p>
+            <p><a href="https://ps.w.org/under-construction-page/assets/screenshot-2.png?rev=1840052">Forgot Password?</a></p>
         </form>
     </div>
 </div>
-        <div class="guest-form">
+</section>
+<hr>
+ <!--div class="guest-form">
             <p style="text-align: center;font-family: sans-serif;color: #FFD700;font-size: medium"><STRONG>EXPLORE IN </STRONG><button class="guestdata" type="submit" onclick="guestlogin()">GUEST MODE</button></p>
-        </div>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script>
-$('.message a').click(function(){
- $('form').animate({height:"toggle",opacity: "toggle"}, "slow");
-})
-</script>
-<script>
-    function guestlogin() {
-        window.location.href="guest_login.html";
-    }
-</script>
+        </div-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $('.message a').click(function(){
+         $('form').animate({height:"toggle",opacity: "toggle"}, "slow");
+        })
+        </script>
+        <script>
+            function guestlogin() {
+                window.location.href="guest_login.html";
+            }
+        </script>
+        <script type="text/javascript">
+            document.getElementById("under-construction-page").onclick = function () {
+                location.href = "https://ps.w.org/under-construction-page/assets/screenshot-2.png?rev=1840052";
+            };
+        </script>
+        <script type="text/javascript">
+            document.getElementById("login-redirect").onclick = function () {
+                location.href = "http://b.aditya.ac.in/analysis/student_login.php";
+            };
+        </script>
+        <footer>
+            <h2 style="font-family: 'Courier New', Courier, monospace;">CONTACT INFO</h2>
+            <img width="50%" src="instalogo.png" alt="INSTAGRAM">
+        </footer>
 </body>
 </html>
